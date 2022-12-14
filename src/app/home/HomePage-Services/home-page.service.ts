@@ -40,7 +40,7 @@ export class HomePageService {
     var user:User
     user={emailID:userEmailID, password:userPassword,usertype:type};
     console.log(user)
-    let result=this.http.post<number>('https://quickkart-login-pritam.azurewebsites.net',user)
+    let result=this.http.post<number>('https://quickkart-login-pritam.azurewebsites.net/api/LoginFunction?code=2lscHzqy8fLGeDAn6Nu1TJOOjOOz-soKk1n41zIijjekAzFuHp70DQ==',user)
     return result
 
   }
